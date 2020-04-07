@@ -4,16 +4,16 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 
-public final class PermissionX {
+public final class PermissionEasier {
     private static final String TAG = "InvisibleFragment";
-    public final static PermissionX INSTANCE = new PermissionX();
+    public final static PermissionEasier INSTANCE = new PermissionEasier();
 
     /**
-     * 发起权限请求，且无法拒绝。
-     * @param activity 上下文
-     * @param permissions 权限集
+     * Initiate a request that cannot be rejected.
+     * @param activity Context
+     * @param permissions String[] permissions
      */
-    public static void requestNoDenied(FragmentActivity activity,String[] permissions){
+    public void requestNoDenied(FragmentActivity activity,String[] permissions){
         FragmentManager fragmentManager = activity.getSupportFragmentManager();
         Fragment existedFragment = fragmentManager.findFragmentByTag(TAG);
         InvisibleFragment fragment;
@@ -28,11 +28,11 @@ public final class PermissionX {
     }
 
     /**
-     * 发起权限请求，可以拒绝。
-     * @param activity 上下文
-     * @param permissions 权限集
+     * Initiate a request that can be rejected.
+     * @param activity Context
+     * @param permissions String[] permissions
      */
-    public static void request(FragmentActivity activity,String[] permissions){
+    public void request(FragmentActivity activity,String[] permissions){
         FragmentManager fragmentManager = activity.getSupportFragmentManager();
         Fragment existedFragment = fragmentManager.findFragmentByTag(TAG);
         InvisibleFragment fragment;
@@ -46,5 +46,5 @@ public final class PermissionX {
         fragment.requestNow(activity,permissions,2);
     }
 
-    private PermissionX(){}
+    private PermissionEasier(){}
 }
