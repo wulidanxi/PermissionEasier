@@ -1,6 +1,6 @@
-# PermissionX
+# PermissionEasier
 
-PermissionX是简化Android运行时权限用法的开源库。
+PermissionEasier是简化Android运行时权限用法的开源库。
 
 改自https://github.com/guolindev/PermissionX.git
 
@@ -11,6 +11,6 @@ PermissionX是简化Android运行时权限用法的开源库。
 ```java
   final String[] permissions = {Manifest.permission.ACCESS_COARSE_LOCATION,
                 Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.BLUETOOTH, Manifest.permission.BLUETOOTH_ADMIN};
-  PermissionX.requestNoDenied(this,permissions);
+  PermissionX.INSTANCE.requestNoDenied(this,permissions);
 ```
 
