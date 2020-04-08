@@ -6,6 +6,8 @@ PermissionEasier是简化Android运行时权限用法的开源库。
 
 为了方便Java调用，使用Java修改的版本。
 
+本项目仅用于学习。
+
 简单示例：
 
 ```java
