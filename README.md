@@ -10,9 +10,20 @@ PermissionEasier是简化Android运行时权限用法的开源库。
 
 简单示例：
 
+项目中导入库：
+
+```groovy
+dependencies{
+  ...
+  implementation 'com.stars.wulidanxi:permissionE:1.0.0'
+}
+```
+
+具体使用:
+
 ```java
   final String[] permissions = {Manifest.permission.ACCESS_COARSE_LOCATION,
                 Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.BLUETOOTH, Manifest.permission.BLUETOOTH_ADMIN};
-  PermissionX.INSTANCE.requestNoDenied(this,permissions);
+  PermissionEasier.INSTANCE.requestNoDenied(this,permissions);
 ```
 
