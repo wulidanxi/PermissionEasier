@@ -1,5 +1,7 @@
 # PermissionEasier
 
+ ![GitHub](https://img.shields.io/github/license/wulidanxi/PermissionEasier)
+
 PermissionEasier是简化Android运行时权限用法的开源库。
 
 改自https://github.com/guolindev/PermissionX.git
