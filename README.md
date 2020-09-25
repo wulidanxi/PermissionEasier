@@ -1,6 +1,7 @@
 # PermissionEasier
 
  ![GitHub](https://img.shields.io/github/license/wulidanxi/PermissionEasier)
+ ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/wulidanxi/PermissionEasier)
 
 PermissionEasier是简化Android运行时权限用法的开源库。
 
